@@ -30,7 +30,6 @@ body {
   padding: 0 20px;
 }
 
-/* Header & Navigation */
 .header {
   background: var(--text-dark);
   position: sticky;
@@ -129,7 +128,6 @@ body {
   color: var(--secondary-color);
 }
 
-/* Hero Section */
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -180,7 +178,6 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* About Author Section */
 .about-author {
   padding: 4rem 0;
   background: var(--bg-light);
@@ -224,7 +221,6 @@ body {
   color: var(--text-dark);
 }
 
-/* Purpose Section */
 .purpose {
   padding: 4rem 0;
   background: white;
@@ -249,7 +245,6 @@ body {
   line-height: 1.8;
 }
 
-/* Statistics Section */
 .statistics {
   padding: 4rem 0;
   background: linear-gradient(
@@ -295,7 +290,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Carousel Section */
 .carousel-section {
   padding: 4rem 0;
   background: var(--bg-light);
@@ -340,7 +334,6 @@ body {
   background: var(--secondary-color);
 }
 
-/* Highlights Section */
 .highlights {
   padding: 4rem 0;
   background: white;
@@ -378,7 +371,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Page Hero */
 .page-hero {
   background: linear-gradient(
     135deg,
@@ -399,7 +391,6 @@ body {
   font-size: 1.3rem;
 }
 
-/* Timeline */
 .timeline-section {
   padding: 4rem 0;
   background: var(--bg-light);
@@ -465,7 +456,6 @@ body {
   margin: 1rem 0;
 }
 
-/* Heritage Section */
 .heritage-section {
   padding: 4rem 0;
   background: white;
@@ -511,7 +501,6 @@ body {
   line-height: 1.6;
 }
 
-/* Achievements Sections */
 .achievements-intro {
   padding: 3rem 0;
   background: white;
@@ -711,7 +700,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Gallery Sections */
 .gallery-carousel {
   padding: 4rem 0;
   background: var(--bg-light);
@@ -826,7 +814,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Footer */
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -872,7 +859,6 @@ body {
   text-align: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
