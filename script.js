@@ -1,11 +1,9 @@
-// Initialize AOS (Animate On Scroll)
 AOS.init({
     duration: 1000,
     once: true,
     offset: 100
 });
 
-// Mobile Menu Toggle
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 
@@ -15,7 +13,6 @@ if (menuToggle && navMenu) {
         navMenu.classList.toggle('active');
     });
 
-    // Close menu when clicking on a link
     const navLinks = navMenu.querySelectorAll('a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -24,7 +21,6 @@ if (menuToggle && navMenu) {
         });
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
             menuToggle.classList.remove('active');
@@ -33,7 +29,6 @@ if (menuToggle && navMenu) {
     });
 }
 
-// Initialize Swiper for University Carousel (index.html)
 if (document.querySelector('.universitySwiper')) {
     new Swiper('.universitySwiper', {
         loop: true,
@@ -56,7 +51,6 @@ if (document.querySelector('.universitySwiper')) {
     });
 }
 
-// Initialize Swiper for Architecture Gallery (gallery.html)
 if (document.querySelector('.architectureSwiper')) {
     new Swiper('.architectureSwiper', {
         loop: true,
@@ -77,7 +71,6 @@ if (document.querySelector('.architectureSwiper')) {
     });
 }
 
-// Initialize Swiper for Events Carousel (gallery.html)
 if (document.querySelector('.eventsSwiper')) {
     new Swiper('.eventsSwiper', {
         loop: true,
@@ -103,7 +96,6 @@ if (document.querySelector('.eventsSwiper')) {
     });
 }
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -117,7 +109,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add scroll animation to header
 let lastScroll = 0;
 const header = document.querySelector('.header');
 
@@ -135,7 +126,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Counter animation for statistics
 const observerOptions = {
     threshold: 0.5,
     rootMargin: '0px'
@@ -179,7 +169,6 @@ if (statsSection) {
     counterObserver.observe(statsSection);
 }
 
-// Lazy loading images
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -199,4 +188,3 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-console.log('150 років ЧНУ - сайт успішно завантажено!');
